@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-orange-50 text-slate-800 font-['Zen_Maru_Gothic'];
+    background-image: radial-gradient(circle at 50% 50%, #fff7ed 0%, #ffedd5 100%);
+    min-height: 100vh;
+  }
+}
