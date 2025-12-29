@@ -54,7 +54,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     }
 
     return (
-        <div className="flex flex-col h-screen overflow-hidden bg-orange-50 text-slate-800">
+        <div className="flex flex-col h-[100dvh] overflow-hidden bg-orange-50 text-slate-800">
             {/* Top Bar: Turn Info */}
             <header className="p-4 bg-white/80 backdrop-blur border-b-4 border-orange-100 flex justify-between items-center z-10 shadow-sm">
                 <div>
@@ -124,8 +124,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         </div>
 
                         {/* Hand Area */}
-                        <div className="w-full bg-white/80 p-6 backdrop-blur-md border-t-4 border-orange-100 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
-                            <div className="flex justify-center items-end gap-4 h-40">
+                        <div className="w-full bg-white/80 p-2 md:p-6 backdrop-blur-md border-t-4 border-orange-100 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+                            <div className="flex justify-center items-end gap-2 md:gap-4 h-32 md:h-40">
                                 <AnimatePresence>
                                     {currentPlayer.hand.map(item => {
                                         const isSelected = gameState.selectedItems.some(i => i.id === item.id);
